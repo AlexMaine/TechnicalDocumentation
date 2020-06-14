@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACCA,OAAO,CAAC,sEAAI;ACEZ,AAAA,MAAM,CAAA;EACF,UAAU,EAJC,IAAI;CAKhB;;ACHH,AAAA,MAAM,CAAA;EACF,UAAU,EAHC,MAAM;CAIpB;;AHCD,AAAA,IAAI,CAAA;EACA,UAAU,ECFD,KAAK;CDGjB;;AACD,AAAA,EAAE,CAAA;EACE,MAAM,EAAE,MAAM;EACd,KAAK,ECPC,MAAM;EDQZ,WAAW,ECNA,YAAY,EAAE,OAAO;CDOnC",
+    "sources": [
+        "exemple.scss",
+        "../partials/_variables.scss",
+        "../partials/_header.scss",
+        "../partials/_footer.scss"
+    ],
+    "names": [],
+    "file": "exemple.css"
+}

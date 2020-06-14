@@ -1,0 +1,25 @@
+.container p {
+  color: tomato;
+}
+
+.container p strong {
+  color: #222;
+}
+
+.container a {
+  color: #222;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: tomato;
+}
+
+.container table tr:nth-child(odd) {
+  background: lightblue;
+}
+
+.container table td {
+  padding: 10px;
+}
+/*# sourceMappingURL=exemple.css.map */

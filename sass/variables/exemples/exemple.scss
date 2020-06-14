@@ -1,0 +1,48 @@
+$color: #fcb5ca;
+$color1: #567296;
+$color2: #569396;
+$color3: #b3c3e3;
+$color3: #ed2d3c !default;
+$pinkborder: 2px dashed $color1;
+$large : "screen and (max-width: 1039px)";
+$medium : "screen and (max-width: 639px)";
+$small : "screen and (max-width: 439px)";
+$pad : 5px;
+
+
+
+.c1{
+    background : $color;
+}
+
+.c2{
+    background: $color1;
+}
+
+.c3{
+    background: $color2;
+    padding: $pad + $pad;
+}
+
+.c4{
+border : $pinkborder;
+}
+
+.c5{
+    $color3: red;
+    // color3 sera interpreté red uniquement ici dans ces accolades
+    border : $color3 1px solid;
+    //sortie rouge
+}
+
+.c6{
+    border : $color3;
+}
+
+
+
+@media #{$medium}{
+
+    // mon code ici
+}
+

@@ -1,0 +1,58 @@
+.actu, .politique, .science {
+  font-size: 20px;
+  margin: 20px auto;
+  padding: 15px;
+  width: 650px;
+  border-radius: 5px;
+  border: 1px solid #222;
+}
+
+.actu.politique, .politique {
+  background: tomato;
+  color: #fff;
+}
+
+.actu.science, .science {
+  background: #bd73fa;
+  color: #fff;
+}
+
+.politique {
+  background: tomato;
+  color: #fff;
+}
+
+.science {
+  background: purple;
+  color: #fff;
+}
+
+.btn, .success, .danger {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.success {
+  background-color: #45c245;
+  color: #020602;
+}
+
+.success:hover {
+  background: #34a034;
+}
+
+.danger {
+  background: red;
+  color: #330000;
+}
+
+.danger:hover {
+  background: #cc0000;
+}
+/*# sourceMappingURL=exemple.css.map */

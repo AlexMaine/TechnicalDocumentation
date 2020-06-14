@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/libs/highlight/styles/tomorrow-night-blue.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.css">
+
+    <title>Commandes SASS</title>
+</head>
+
+<body>
+    <div class="container">
+    <h1>Commande SASS</h1>
+    <p>Pour ce chapitre il faut au préalable télécharger dart-sass et deposer 
+        dezipé dans un dossier de notre environnement de travail</p>
+
+        <p class="code-title">
+            Compiler un fichier .scss en pratique
+        </p>
+    <pre class="lang-powershell">
+        <code>
+            > cd chemin/dossier/dart-sass
+
+            # Liste toutes les commandes
+            >sass --help
+
+            # On doit dire a sass quel est notre fichier de sortie(css)
+            > sass ../styles.scss ../styles.csss
+            > sass ../mon-dossier/style.scss ../mon-dossier-b/style.css
+
+            #Compresser la sortie
+            >sass --style=compressed ../mon-dossier/style.scss ../mon-dossier-b/styles.css
+            #sass va automatiquement compilé notre fichier styles.scss
+
+            #Deompresser la sortie
+            >sass --style=expanded ../mon-dossier/style.scss ../mon-dossier-b/styles.css
+            #sass va automatiquement compilé notre fichier styles.scss
+
+            >sass --watch ../styles.scss ../styles.css
+         </code>
+
+    </pre>
+
+
+                <!--BOUTONS RETOUR ET EXEMPLES-->
+
+    <div class="buttons">
+
+        <button><a href="../../../index.html">Retour</a></button>
+
+    </div>
+
+</div>
+
+    <script src="../../assets/libs/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import "../partials/variables";
+@import "../partials/_header";
+@import "../partials/_footer";
+
+
+body{
+    background: $bg-color1;
+}
+h1{
+    margin: 30px O;
+    color: $color1;
+    font-family: $font-family;
+}

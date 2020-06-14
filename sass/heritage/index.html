@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/libs/highlight/styles/tomorrow-night-blue.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.css">
+    <title>L'Heritage</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>L'heritage SASS</h1>
+        <p class="code-title">Avec l'héritage SASS (@extend) on va pouvoir copier les propriétés d'un 
+            selecteur vers un autre selecteur. <br> C'est utile dans les cas de 
+            la création de classes comme .actu, .btn</p>
+        <pre class="lang-scss">
+            <code>
+                // style.scss
+
+                .btn{
+                    display: inline-block;
+                    text-align: center;
+                    border: 1px solid;
+                    padding: 10px;
+                }
+                .danger{
+                    // Nous avons les propriétés css de .btn ici;
+                    @extend .btn;
+                    background: red;
+                }
+
+            </code>
+
+        </pre>
+
+                        <!--BOUTONS RETOUR ET EXEMPLES-->
+
+        <div class="buttons">
+
+            <button><a href="../../../index.html">Retour</a></button>
+            <button><a href="exemples/exemple.html">Exemple</a></button>
+           
+    
+        </div>
+    
+    </div>
+
+    <script src="../../assets/libs/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</body>

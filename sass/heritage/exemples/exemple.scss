@@ -1,0 +1,63 @@
+.actu{
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    width: 650px;
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+// selection 1 (sans heritage)
+.actu{
+    &.politique{
+        background: tomato;
+        color: #fff;
+    }
+    &.science{
+        background: rgb(189, 115,250);
+        color: #fff;
+    }
+}
+
+// seection 2 (avec heritage)
+.politique{
+    @extend .actu;
+    background: tomato;
+    color: #fff;
+}
+.science{
+    @extend .actu;
+    background: purple;
+    color: #fff;
+}
+
+.btn{
+    display : inline-block;
+    text-align : center;
+    border : 1px solid;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+$green : rgb(69,194,69);
+$red: red;
+
+.success{
+    @extend .btn;
+    background-color:$green;
+    color: darken($green, 50%);
+    &:hover{
+        background: darken($green, 10%);
+    }
+}
+
+.danger{
+    @extend .btn;
+    background:$red;;
+    color: darken($red, 40%);
+    &:hover{
+        background: darken($red, 10%);
+    }
+}

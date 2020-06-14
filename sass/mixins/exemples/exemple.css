@@ -1,0 +1,86 @@
+.block_1 {
+  display: block;
+  margin: 0 auto;
+  background: #a3f07f;
+  width: 200px;
+  height: 200px;
+}
+
+.block_2 {
+  display: block;
+  margin: 0 auto;
+  background: #a3f07f;
+  width: 400px;
+  height: 200px;
+}
+
+.carre {
+  background: #a3f07f;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.29);
+          box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.29);
+}
+
+.rectangle {
+  background: #800060;
+  width: 200px;
+  height: 300px;
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.29);
+          box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.29);
+}
+
+div {
+  margin: 10px 0;
+}
+
+.block_4 {
+  background: lightblue;
+  border: 2px solid #e6bbad;
+  padding: 20px;
+}
+
+.block_5 {
+  padding: 15px;
+  background: #07073b;
+  color: #fff;
+}
+
+.block_6 {
+  width: 250px;
+  height: 250px;
+  border-radius: 0;
+  background: #ffc0cb;
+}
+
+.block_8 {
+  padding: 20px;
+  -webkit-box-shadow: 1px 1px 2px #222;
+          box-shadow: 1px 1px 2px #222;
+  width: 250px;
+  height: 250px;
+  border-radius: 0;
+}
+
+.block_8 span {
+  text-shadow: 1px 1px 1px #222;
+}
+
+.block_7 {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  -webkit-box-shadow: 1px 1px 2px #a8a6a6;
+          box-shadow: 1px 1px 2px #a8a6a6;
+  background: #ffff00;
+}
+
+.gradient1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(black));
+  background: linear-gradient(to bottom, red, black);
+  background: -webkit-gradient(linear, left top, right top, from(red), to(black));
+  background: linear-gradient(to right, red, black);
+  background: -webkit-gradient(linear, ellipse at center, from(red), to(black));
+  background: linear-gradient(to ellipse at center, red, black);
+}
+/*# sourceMappingURL=exemple.css.map */

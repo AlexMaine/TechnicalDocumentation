@@ -1,0 +1,117 @@
+@mixin center-block{
+    display :block;
+    margin: 0 auto;
+
+}
+
+.block_1{
+    @include center-block;
+    background: #a3f07f;
+    width: 200px;
+    height: 200px;
+}
+
+
+.block_2{
+    @include center-block;
+    background: #a3f07f;
+    width: 400px;
+    height: 200px;
+}
+
+@mixin box($width, $height : $width){
+        width: $width;
+        height :$height;
+        box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.29);
+}
+
+.carre{
+    background: #a3f07f;
+    @include box(300px, 300px);
+}
+
+.rectangle{
+    background: rgb(128, 0, 96);
+    @include box(200px, 300px);
+}
+
+div{
+    margin : 10px 0;
+}
+
+@mixin bg-complement($color : lightblue){
+    background : $color;
+    border: 2px solid complement($color);
+}
+
+.block_4{
+    @include bg-complement();
+    padding : 20px;
+}
+
+@mixin bg-color($color){
+
+    background: $color;
+    @if lightness($color) <50%{
+        color: #fff;
+    }@else{
+        color: #222;
+    }
+}
+
+.block_5{
+    padding: 15px;
+    @include bg-color(rgb(7, 7, 59));  
+}
+
+@mixin square($size : 250px , $radius : 0){
+
+    width : $size;
+    height: $size;
+    border-radius : $radius;
+}
+
+
+.block_6{
+    @include square();
+    background: #ffc0cb;
+}
+
+
+@mixin shadow($color :#a8a6a6 , $text : false ){
+    @if $text{
+        text-shadow : 1px 1px 1px $color;
+    }@else{
+        box-shadow : 1px 1px 2px $color;
+    }
+}
+
+.block_8{
+    padding : 20px;
+    @include shadow(#222);
+    span{
+        @include shadow(#222, true)
+    }
+    @include square();
+}
+
+
+.block_7{
+    @include square($radius: 10%);
+    @include shadow();
+    background: #ffff00;
+}
+
+@mixin gradient($start-color, $end-color , $orientation){
+    background: linear-gradient(to bottom, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+    background: linear-gradient(to ellipse at center, $start-color, $end-color);
+}
+
+.gradient1{
+    @include gradient(red, black, "horizontal");
+}
+
+
+
+

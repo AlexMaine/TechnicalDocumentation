@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/libs/highlight/styles/tomorrow-night-blue.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.css">
+
+    <title>Les imbrications SASS</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Les imbrications SASS</h1>
+        <p class="code-title">l'un des éléments le plus important de SASS c'est la synthaxe d'imbrication</p>
+
+        <pre class="lang-scss">
+           <code>
+                // style.scss
+                // Ici on selectionne les paragraphes qui sont dans la class .test
+                .test{
+                    p{
+                        background:yellow;
+                    }
+                }
+
+                // style.css compilé
+                .test p{
+                    background: yellow;
+                }
+
+           </code>
+       </pre>
+
+                        <!--BOUTONS RETOUR ET EXEMPLES-->
+
+    <div class="buttons">
+
+
+        <button><a href="../../../index.html">Retour</a></button>
+        <button><a href="exemples/exemple.html">Exemple</a></button>
+
+    </div>
+       
+</div>
+
+    <script src="../../assets/libs/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>

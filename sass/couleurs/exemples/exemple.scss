@@ -1,0 +1,66 @@
+$couleur: #ee7777;
+$couleur-rgb : rgb(238, 119, 119);
+
+body{
+    color: #fff;
+}
+div{
+    padding: 20px;
+}
+
+.m1{
+    background: $couleur;
+
+    &:hover{
+        background: complement($couleur);
+        transition: all ease 2s;
+    }
+}
+
+.m2{
+    background: saturate($couleur, 50%);
+
+    &:hover{
+        background: complement(saturate($couleur, 50%));
+        transition: all ease 2s;
+    }
+}
+
+.m3{
+    background: desaturate($couleur, 40%);
+}
+
+.m4{
+    background: complement($couleur);
+}
+
+.m5{
+    background: invert($couleur);
+}
+
+.m6{
+    background: darken($couleur, 50%);
+}
+
+.m7{
+    background: lighten($couleur, 20%);
+}
+
+.m8{
+    background-color: #c24ab8;
+    // background: rgba($couleur);
+    h2{
+        background: rgba(#222, 0.5);
+        padding: 10px;
+    }
+}
+
+div{
+    transition: background 450ms;
+}
+
+
+
+
+
+
