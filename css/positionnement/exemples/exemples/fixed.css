@@ -1,0 +1,17 @@
+.container{
+    background: #d9ffd2;
+    width: 850px;
+    margin: 43px auto;
+}
+
+nav{
+    background: yellow;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav a{
+    display: inline-block;
+    padding: 15px;
+}
