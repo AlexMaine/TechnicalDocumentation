@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/libs/highlight/styles/tomorrow-night-blue.css">
+    <title>Transitions & Transforms</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Transitions & Transforms</h1>
+       
+        <ul>
+            <li>"rotate" : pivoter</li>
+            <li>"translate" : positionner</li>
+            <li>"scale" : manipuler l'echelle</li>
+            <li>"skew" : distordre</li>
+        </ul>
+
+        <p class="code-title">La propriété transform va nous permettre de manipuler visuellement un élément en faisant:</p>
+
+        <pre class="lang-css" style= "margin-top: -42px">
+
+            <code>
+                div{:hover
+                    transform: rotate(45deg);
+                }
+
+                div:hover{
+                    transform: scale(1.2) , 2;
+                }
+
+                div:hover{
+                    transform: translate(10px, 20px)
+                }
+
+                div:hover{
+                    transform: skew(45deg);
+                }
+            </code>
+
+        </pre>
+    </div>
+</body>
+<script src="../../assets/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</html>

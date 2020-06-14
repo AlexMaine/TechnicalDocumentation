@@ -1,0 +1,21 @@
+
+/* position relative se positionne par rapport à lui-meme ex: top10 il va etre plus bas de 10px de son emplacement d'origine*/
+
+.relative{
+    position: relative;
+    border: 2px solid tomato;
+    top: 1px;
+}
+
+div div{
+    border: 2px solid green;
+}
+
+/* position absolute va se positionner par rapport a son parent relatif. Si il n'a pas de parent relatif il va se positionner par rapport à body.
+Il va perdre ses propriétés bloc (donc faudra lui donner une largeur) */
+
+.absolute{
+    position: absolute;
+    border: 2px solid tomato;
+    top: 1px;
+}
