@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/libs/highlight/styles/tomorrow-night-blue.css">
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="stylesheet" href="../../assets/libs/bootstrap/css/bootstrap.css">
+
+    <title>Media Queries</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Media Queries</h1>
+    
+    <p>Les requêtes Media Queries permette de modifier l'apparence dun site en fonction du type d'appareil et de ses caracteritiques  
+        (la resolution d'ecran ou la largeur de la zone d'affichage)</p>
+
+    <p class="code-title">Cet exemple cible les écrans de largeur inferieur ou egale à 640px </p>
+    <pre class="lang-css" style="height:290px">
+        <code>
+
+            @media screen and (max-widht: 640px){
+                /* Les propriétés CSS ici */
+            }
+
+            @media screen and (min-widht: 200px) and (max-widht: 640px{
+                /* Les propriétés CSS ici */
+            }
+        </code>
+    </pre>
+
+    <p class="code-title">Cet exemple cible les écrans dont la résolution en largeur est comprise entre 200px et 640px</p>
+    <pre class="lang-css">
+        <code>
+
+            @media screen and (min-widht: 200px) and (max-widht: 640px{
+                /* Les propriétés CSS ici */
+            }
+        </code>
+    </pre>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="text-center">
+              Extra small<br>
+              <small>&lt;576px</small>
+            </th>
+            <th class="text-center">
+              Small<br>
+              <small>≥576px</small>
+            </th>
+            <th class="text-center">
+              Medium<br>
+              <small>≥768px</small>
+            </th>
+            <th class="text-center">
+              Large<br>
+              <small>≥992px</small>
+            </th>
+            <th class="text-center">
+              Extra large<br>
+              <small>≥1200px</small>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-nowrap" scope="row">Max container width</th>
+            <td>None (auto)</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+          </tr>
+          <tr>
+            <th class="text-nowrap" scope="row">Class prefix</th>
+            <td><code>.col-</code></td>
+            <td><code>.col-sm-</code></td>
+            <td><code>.col-md-</code></td>
+            <td><code>.col-lg-</code></td>
+            <td><code>.col-xl-</code></td>
+          </tr>
+          <tr>
+            <th class="text-nowrap" scope="row"># of columns</th>
+            <td colspan="5">12</td>
+          </tr>
+          <tr>
+            <th class="text-nowrap" scope="row">Gutter width</th>
+            <td colspan="5">30px (15px on each side of a column)</td>
+          </tr>
+          <tr>
+            <th class="text-nowrap" scope="row">Nestable</th>
+            <td colspan="5">Yes</td>
+          </tr>
+          <tr>
+            <th class="text-nowrap" scope="row">Column ordering</th>
+            <td colspan="5">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+  <footer>
+    
+  </footer>
+
+
+<script src="../../assets/libs/highlight/highlight.pack.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
