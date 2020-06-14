@@ -1,0 +1,33 @@
+.clear{
+    clear: left;
+
+}
+
+aside{
+    float: left;
+    width: 20%;
+
+}
+
+@media screen and (max-width: 710px){
+
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    p, ul li{
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    aside{
+        width: 100%;
+    }
+    ul li{
+        display : inline-block;
+    }
+    .block-text{
+        width: 100%;
+    }
+}
